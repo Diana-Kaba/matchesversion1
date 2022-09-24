@@ -16,6 +16,7 @@ while (n > 0) {
   }
   alert("My turn!");
   let random = Math.floor(Math.random() * 3) + 1;
+  n -= random;
   let j = prompt("Got the matches!");
   random -= j;
   if (j <= 0) {

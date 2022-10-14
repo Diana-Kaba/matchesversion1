@@ -29,7 +29,6 @@ function matches(count) {
 }
 
 function show(n) {
-  n = 13;
   let str = '';
   for (let i = 0; i < n; i++) {
     str += "| ";

@@ -29,11 +29,11 @@ function matches(count) {
 }
 
 function show(n) {
-  let str = '';
+  let str = "";
   for (let i = 0; i < n; i++) {
     str += "| ";
-    alert(str);
   }
+  alert(str);
 }
 
 matches();

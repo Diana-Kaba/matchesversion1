@@ -10,7 +10,7 @@ function matches(count) {
       continue;
     }
     count -= m;
-    alert(show());
+    alert(show(count));
     if (count <= 0) {
       alert("Your win!");
       break;
@@ -20,7 +20,7 @@ function matches(count) {
     count -= random;
     let j = prompt("Got the matches!");
     random -= j;
-    alert(show());
+    alert(show(count));
     if (j <= 0) {
       alert("I win!");
       break;
@@ -29,8 +29,11 @@ function matches(count) {
 }
 
 function show(n) {
-  n = "| | | | | | | | | | | | |";
-  alert(n);
+  n = 13;
+  for (let i = 0; i < n; i++) {
+    n += "| ";
+    alert(n);
+  }
 }
 
 matches();

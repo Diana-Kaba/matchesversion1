@@ -32,7 +32,7 @@ function show(n) {
   let str = '';
   for (let i = 0; i < n; i++) {
     str += "| ";
-    alert(n + ' ' + str);
+    alert(str);
   }
 }
 

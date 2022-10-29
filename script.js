@@ -10,7 +10,7 @@ function matches(count) {
       continue;
     }
     count -= m;
-    alert(show(count));
+    show(count);
     if (count <= 0) {
       alert("Your win!");
       break;
@@ -18,10 +18,8 @@ function matches(count) {
     alert("My turn!");
     let random = Math.floor(Math.random() * 3) + 1;
     count -= random;
-    let j = prompt("Got the matches!");
-    random -= j;
-    alert(show(count));
-    if (j <= 0) {
+    show(count);
+    if (count <= 0) {
       alert("I win!");
       break;
     }

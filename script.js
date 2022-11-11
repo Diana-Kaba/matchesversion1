@@ -1,5 +1,4 @@
 function matches(count) {
-  count = 13;
   while (count > 0) {
     alert("Your turn!");
     let m = prompt("Get the matches!");
@@ -34,4 +33,4 @@ function show(n) {
   alert(str);
 }
 
-matches();
+matches(13);
